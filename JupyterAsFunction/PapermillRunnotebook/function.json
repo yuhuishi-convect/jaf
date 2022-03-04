@@ -1,0 +1,11 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "message",
+      "activity": "runNotebook",
+      "type": "activityTrigger",
+      "direction": "in"
+    }
+  ]
+}
