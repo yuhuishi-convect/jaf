@@ -14,12 +14,7 @@ import azure.durable_functions as df
 
 def orchestrator_function(context: df.DurableOrchestrationContext):
     payload = context.get_input()
-    url = payload.pop("url")
     params = payload
-
-    logging.info(
-        f"Notebook url: {url}"
-    )
 
     logging.info(
         f"Notebook params: {params}"
@@ -27,7 +22,6 @@ def orchestrator_function(context: df.DurableOrchestrationContext):
 
     notebook_result = yield context.call_activity('runNotebook', 
         {
-            "url": url,
             "params": params
         }
     )
