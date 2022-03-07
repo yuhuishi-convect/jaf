@@ -21,6 +21,8 @@ project.lock.json
 .secrets
 appsettings.json
 local.settings.json
+.azure
+.vscode
 
 node_modules
 dist
@@ -41,5 +43,3 @@ venv.bak/
 __pycache__/
 *.py[cod]
 *$py.class
-
-**/.ipynb_checkpoints
