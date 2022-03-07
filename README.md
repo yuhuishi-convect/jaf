@@ -6,6 +6,10 @@ jaf stands for Jupyter notebook as functions. This is a project for [Azure trial
 
 jaf skaffolds an Azure Duration Function project to enable a jupyter notebook be deployed as a web endpoint. 
 
+<a href="https://www.loom.com/share/e26b21e1b5b94e589a274faf77863d4a">
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/e26b21e1b5b94e589a274faf77863d4a-with-play.gif">
+  </a>
+
 ## Usage
 
 ### Prerequisites
