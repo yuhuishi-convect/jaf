@@ -248,20 +248,22 @@ Server: Kestrel
 az login
 az config param-persist on
 # create a resource group
-az group create --name AzureFunctionsQuickstart-rg --location <REGION>
+az group create --name <RESOURCE_GROUP_NAME> --location eastus
 
 # create a storage account
 az storage account create --name <STORAGE_NAME> --sku Standard_LRS
 
 # create a function app 
-az functionapp create --consumption-plan-location westeurope --runtime python --runtime-version 3.8 --functions-version 3 --name <APP_NAME> --os-type linux --storage-account <STORAGE_NAME>
+az functionapp create --consumption-plan-location eastus --runtime python --runtime-version 3.8 --functions-version 3 --name <APP_NAME> --os-type linux --storage-account <STORAGE_NAME>
 
 # publish
 func azure functionapp publish <APP_NAME>
+```
 
+
+```bash
 # test the remote endpoint
-http <ENDPOINT_URL> msg=hellowrld
-
+http 
 ```
 
 
